@@ -1,6 +1,8 @@
+using Presentation;
 using Application;
 using Domain;
-using Presentation;
+using Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,8 +14,8 @@ builder.Services.AddSwaggerGen();
 builder.Services
             .AddPresentation()
             .AddApplication()
-            .AddDomain();
-
+            .AddDomain()
+            .AddInfrastructure();
 
 var app = builder.Build();
 
