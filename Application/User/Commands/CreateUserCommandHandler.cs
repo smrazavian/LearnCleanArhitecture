@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Domain.User;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,8 @@ namespace Application.User.Commands
     {
         public Task<Guid> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
-            return Task.FromResult(Guid.NewGuid());
+            var user = new Domain.User.User(request.Name, request.Family, request.Email);
+            return Task.FromResult(user.Id);
         }
     }
 }
