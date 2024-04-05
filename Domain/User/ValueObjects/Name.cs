@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain.User.ValueObjects
 {
-    public class Name : ValueObject
+    public sealed class Name : ValueObject
     {
         private readonly string _name;
         public string Value => _name;

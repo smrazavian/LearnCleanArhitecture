@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain.User
 {
-    public class User: AggreagetRoot<Guid>
+    public sealed class User: AggreagetRoot<Guid>
     {
         public User(string name, string family, string email)
         {
