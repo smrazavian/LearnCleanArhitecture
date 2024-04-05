@@ -1,6 +1,9 @@
 ﻿## هدف
 این پروژه براساس مقاله 
-[معماری تمیز (Clean Architecture) چیست ؟ ۵ مرحله راه اندازی آن](https://nikamooz.com/what-is-clean-architecture/)
+1. [معماری تمیز (Clean Architecture) چیست ؟ ۵ مرحله راه اندازی آن](https://nikamooz.com/what-is-clean-architecture/)
+
+2. [پیاده سازی معماری Domain Driven Design و تست نویسی + راهنمای گام به گام](https://nikamooz.com/implementation-of-domain-driven-design-architecture/)
+
 برای یادگیری خودم ایجاد شده است
 
 ## لایه بندی ها
